@@ -5,7 +5,7 @@ date: 2018-02-27T15:51:21+11:00
 weight: 1
 draft: false
 bref: "Create your first diagram from a Sysl specification"
-toc: false
+toc: true
 ---
 
 Sysl consists of two executables: `sysl` and `reljam`.</br> The **Sy**stem **S**pecification **L**anguage `sysl` is mainly concerned with diagram creation whereas the **Rel**ational **Ja**va **M**odel program `reljam` generates different types of source code output.
