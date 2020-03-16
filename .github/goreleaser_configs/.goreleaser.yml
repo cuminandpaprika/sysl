@@ -32,8 +32,8 @@ build:
 
 dockers:
   - image_templates:
-    - "docker.io/anzbank/sysl:latest"
-    - "docker.io/anzbank/sysl:{{ .Version }}"
+    - "docker.io/zhengj/test-sysl:latest"
+    - "docker.io/zhengj/test-sysl:{{ .Version }}"
 
 archives:
 - id: "sysl"
