@@ -45,10 +45,7 @@ jobs:
 
       # GoReleaser requires Docker Hub access to push image
       - name: Login to Docker Hub
-        uses: azure/docker-login@v1
-        with:
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_PASS }}
+        run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
 
       - name: Set env
         run: echo ::set-env name=GOVERSION::$(go version | awk '{print $3, $4;}')
