@@ -30,11 +30,6 @@ build:
   goarm:
     - 7
 
-dockers:
-  - image_templates:
-    - "zhengj/test-sysl:latest"
-    - "zhengj/test-sysl:{{ .Version }}"
-
 archives:
 - id: "sysl"
   builds: ['sysl']
