@@ -32,8 +32,8 @@ build:
 
 dockers:
   - image_templates:
-    - "docker.io/zhengj/test-sysl:latest"
-    - "docker.io/zhengj/test-sysl:{{ .Version }}"
+    - "zhengj/test-sysl:latest"
+    - "zhengj/test-sysl:{{ .Version }}"
 
 archives:
 - id: "sysl"
