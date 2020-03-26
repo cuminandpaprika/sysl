@@ -143,7 +143,6 @@ brews:
     # Packages your package depends on.
     dependencies:
       - go
-      - git
 
     # Packages that conflict with your package.
     # conflicts:
