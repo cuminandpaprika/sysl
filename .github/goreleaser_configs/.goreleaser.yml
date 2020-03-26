@@ -160,10 +160,8 @@ brews:
     # Default is empty.
     test: |
       system "#{bin}/sysl --version"
-      ...
 
     # Custom install script for brew.
     # Default is 'bin.install "program"'.
     install: |
       bin.install "sysl"
-      ...
