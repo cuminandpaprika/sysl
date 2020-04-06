@@ -46,7 +46,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/rickb777/date v1.12.4
 	github.com/russross/blackfriday v2.0.0+incompatible
-	github.com/sirupsen/logrus v1.4.2
+	github.com/sirupsen/logrus v1.5.0
 	github.com/spf13/afero v1.2.2
 	github.com/stretchr/testify v1.5.1
 	go.mongodb.org/mongo-driver v1.3.1 // indirect
