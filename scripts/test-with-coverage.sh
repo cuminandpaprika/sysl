@@ -16,7 +16,7 @@ coverage_level() {
         awk '//{sub(/(\.[0-9]+)?%$/,"",$3);print$3}'
 }
 
-go test -coverprofile=$COVERAGE_FILE -covermode=atomic ./...
+go test -coverprofile=$COVERAGE_FILE -covermode=atomic $(go list ./... | grep -v github.com/anz-bank/sysl/pkg/lspimpl/lspframework)
 EXIT_CODE=$(echo $?)
 
 COVERAGE_LEVEL="$(coverage_level)"
