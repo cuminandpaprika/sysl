@@ -35,7 +35,7 @@ require (
 	github.com/go-openapi/strfmt v0.19.5 // indirect
 	github.com/go-openapi/swag v0.19.8
 	github.com/go-openapi/validate v0.19.7 // indirect
-	github.com/golang/protobuf v1.3.5
+	github.com/golang/protobuf v1.4.0
 	github.com/gorilla/handlers v1.4.2
 	github.com/gorilla/mux v1.7.4
 	github.com/hashicorp/hcl v1.0.0
