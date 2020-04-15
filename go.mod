@@ -16,7 +16,7 @@ require (
 	github.com/antlr/antlr4 v0.0.0-20200309161749-1284814c2112
 	github.com/anz-bank/sysl-go v0.0.0-20200325045908-46c4ce0a2736
 	github.com/arr-ai/hash v0.5.0 // indirect
-	github.com/arr-ai/wbnf v0.13.0
+	github.com/arr-ai/wbnf v0.15.0
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/cncf/udpa/go v0.0.0-20200313221541-5f7e5dd04533 // indirect
