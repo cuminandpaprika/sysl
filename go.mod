@@ -24,7 +24,7 @@ require (
 	github.com/dchest/siphash v1.2.1 // indirect
 	github.com/dlclark/regexp2 v1.2.0 // indirect
 	github.com/fullstorydev/grpcui v0.2.1
-	github.com/fullstorydev/grpcurl v1.5.0
+	github.com/fullstorydev/grpcurl v1.6.0
 	github.com/getkin/kin-openapi v0.3.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-chi/chi v4.0.4+incompatible
@@ -39,7 +39,6 @@ require (
 	github.com/gorilla/handlers v1.4.2
 	github.com/gorilla/mux v1.7.4
 	github.com/hashicorp/hcl v1.0.0
-	github.com/jhump/protoreflect v1.6.0 // indirect
 	github.com/markbates/pkger v0.15.0
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/pkg/errors v0.9.1
@@ -51,7 +50,7 @@ require (
 	github.com/stretchr/testify v1.5.1
 	go.mongodb.org/mongo-driver v1.3.1 // indirect
 	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
-	google.golang.org/grpc v1.28.0
+	google.golang.org/grpc v1.29.0
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/yaml.v2 v2.2.8
 )
