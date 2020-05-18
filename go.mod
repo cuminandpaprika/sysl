@@ -40,7 +40,7 @@ require (
 	github.com/gorilla/mux v1.7.4
 	github.com/hashicorp/hcl v1.0.0
 	github.com/jhump/protoreflect v1.6.0 // indirect
-	github.com/markbates/pkger v0.15.0
+	github.com/markbates/pkger v0.16.0
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0
