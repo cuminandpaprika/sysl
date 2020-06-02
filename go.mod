@@ -27,7 +27,7 @@ require (
 	github.com/fullstorydev/grpcurl v1.5.0
 	github.com/getkin/kin-openapi v0.3.0
 	github.com/ghodss/yaml v1.0.0
-	github.com/go-chi/chi v4.0.4+incompatible
+	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-openapi/errors v0.19.4 // indirect
 	github.com/go-openapi/loads v0.19.5
 	github.com/go-openapi/runtime v0.19.12
