@@ -28,13 +28,10 @@ require (
 	github.com/getkin/kin-openapi v0.3.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-chi/chi v4.0.4+incompatible
-	github.com/go-openapi/errors v0.19.4 // indirect
 	github.com/go-openapi/loads v0.19.5
-	github.com/go-openapi/runtime v0.19.12
-	github.com/go-openapi/spec v0.19.7
-	github.com/go-openapi/strfmt v0.19.5 // indirect
-	github.com/go-openapi/swag v0.19.8
-	github.com/go-openapi/validate v0.19.7 // indirect
+	github.com/go-openapi/runtime v0.19.16
+	github.com/go-openapi/spec v0.19.8
+	github.com/go-openapi/swag v0.19.9
 	github.com/golang/protobuf v1.3.5
 	github.com/gorilla/handlers v1.4.2
 	github.com/gorilla/mux v1.7.4
@@ -48,10 +45,9 @@ require (
 	github.com/russross/blackfriday v2.0.0+incompatible
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/afero v1.2.2
-	github.com/stretchr/testify v1.5.1
-	go.mongodb.org/mongo-driver v1.3.1 // indirect
+	github.com/stretchr/testify v1.6.1
 	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
 	google.golang.org/grpc v1.28.0
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
-	gopkg.in/yaml.v2 v2.2.8
+	gopkg.in/yaml.v2 v2.3.0
 )
