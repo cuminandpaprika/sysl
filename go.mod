@@ -15,8 +15,7 @@ require (
 	github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d // indirect
 	github.com/antlr/antlr4 v0.0.0-20200309161749-1284814c2112
 	github.com/anz-bank/sysl-go v0.0.0-20200325045908-46c4ce0a2736
-	github.com/arr-ai/hash v0.5.0 // indirect
-	github.com/arr-ai/wbnf v0.13.0
+	github.com/arr-ai/wbnf v0.24.0
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/cncf/udpa/go v0.0.0-20200313221541-5f7e5dd04533 // indirect
@@ -46,9 +45,9 @@ require (
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/rickb777/date v1.12.4
 	github.com/russross/blackfriday v2.0.0+incompatible
-	github.com/sirupsen/logrus v1.4.2
+	github.com/sirupsen/logrus v1.6.0
 	github.com/spf13/afero v1.2.2
-	github.com/stretchr/testify v1.5.1
+	github.com/stretchr/testify v1.6.1
 	go.mongodb.org/mongo-driver v1.3.1 // indirect
 	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
 	google.golang.org/grpc v1.28.0
