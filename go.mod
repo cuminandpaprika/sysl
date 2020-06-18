@@ -25,7 +25,7 @@ require (
 	github.com/dlclark/regexp2 v1.2.0 // indirect
 	github.com/fullstorydev/grpcui v0.2.1
 	github.com/fullstorydev/grpcurl v1.5.0
-	github.com/getkin/kin-openapi v0.3.0
+	github.com/getkin/kin-openapi v0.14.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-chi/chi v4.0.4+incompatible
 	github.com/go-openapi/errors v0.19.4 // indirect
@@ -53,5 +53,5 @@ require (
 	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
 	google.golang.org/grpc v1.28.0
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
-	gopkg.in/yaml.v2 v2.2.8
+	gopkg.in/yaml.v2 v2.3.0
 )
