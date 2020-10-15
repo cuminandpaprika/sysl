@@ -89,3 +89,23 @@ func TestGenerateMermaidDataModelDiagramWithRecursiveReference(t *testing.T) {
 	assert.NotNil(t, r)
 	assert.NoError(t, err)
 }
+
+func TestGenerateMermaidDataModelDiagramWithNamespaces(t *testing.T) {
+	appName := "Org :: Team :: TestApp"
+	typeName := "myEndPoint1"
+	syslInput := `
+Org :: Team :: TestApp:
+	!type test:
+		field <: string
+
+`
+	m, err := parse.NewParser().ParseString(syslInput)
+	assert.NoError(t, err)
+	mapper := syslwrapper.MakeAppMapper(m)
+	mapper.IndexTypes()
+	mapper.ConvertTypes()
+	r, err := GenerateDataDiagramWithAppAndType(m, appName, typeName)
+	assert.NotNil(t, r)
+	assert.NoError(t, err)
+	t.Log(r)
+}

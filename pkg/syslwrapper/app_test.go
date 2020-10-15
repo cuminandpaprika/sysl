@@ -525,6 +525,13 @@ func TestConvertPrimitive(t *testing.T) {
 	assert.Equal(t, "string", result)
 }
 
+func TestConvertPrimitiveWithContext(t *testing.T) {
+	input := `primitive:DATETIME source_context:{file:"github.com/anz-bank/sysl-examples/demos/sizzle_restaurant/sizzle.sysl" start:{line:291 col:22} end:{line:291 col:22}}`
+	mapper := MakeAppMapper(&sysl.Module{})
+	result := mapper.convertPrimitive(input)
+	assert.Equal(t, "datetime", result)
+}
+
 func prettyPrint(t *testing.T, v interface{}) {
 	json, err := json.MarshalIndent(v, "", " ")
 	if err != nil {
