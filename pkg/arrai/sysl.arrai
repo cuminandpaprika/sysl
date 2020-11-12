@@ -128,9 +128,9 @@ let parseReturn = \payload \apps \currApp
 let polishReturns = \m
     let apps = m.apps => .@;
     let tweak = \. \currApp
-        cond .ret.payload {
+        cond .ret.payload?:{} {
             (:type, ...): ., # Already tweaked.
-            _: . +> (ret: .ret +> (payload: parseReturn(.ret.payload, apps, currApp))),
+            _: . +> (ret: .ret +> (payload: parseReturn(., apps, currApp))),
         };
 
     m +> (apps: m.apps?:{} >>> \currApp \a
