@@ -13,10 +13,10 @@ let _app = (
 
 (
     extractedAppName: (
-        empty: extractedAppName({}) = {},
-        string: extractedAppName('foo') = 'foo',
-        namedItem: extractedAppName((@:0, @item:(name: (part: 'foo')))) = 'foo',
-        app: extractedAppName((name: (part: ['foo']))) = ['foo'],
+        empty: //test.assert.equal(extractedAppName({}),{}),
+        string: //test.assert.equal(extractedAppName('foo'),'foo'),
+        namedItem: //test.assert.equal(extractedAppName((@:0, @item:(name: (part: 'foo')))),'foo'),
+        app: //test.assert.equal(extractedAppName((name: (part: ['foo']))),['foo']),
     ),
     extractedEpName: (
         empty: extractedEpName({}) = {},
@@ -28,32 +28,61 @@ let _app = (
         empty: annotations(()) = {},
         string: annotations((attrs: {'foo': (s: 'bar')})) = {'foo': 'bar'},
         array: annotations((attrs: {'foo': (a: (elt: [(s: 'bar')]))})) = {'foo': ['bar']},
+        arrayOfArrays: 
+            let result = annotations(
+                (attrs: 
+                    {'foo': 
+                        (a: 
+                            (elt: 
+                                (a: 
+                                    (elt: [(s: 'bar')])
+                                )
+                            )
+                        )
+                    }
+                    
+                )
+            );
+            let expected = {'foo': ['bar']};
+            //test.assert.equal(expected, result),
     ),
     tags: (
         empty: tags(()) = {},
         array: tags((attrs: {'patterns': (a: (elt: [(s: 'bar')]))})) = {'bar'},
     ),
     annoRel: (
-        empty: annoRel('app', {}) = (app: {}),
-        single: annoRel('app', {(appName: 'App', app: _app)}) =
-            (app: {(appName: 'App', appAnnoName: 'foo', appAnnoValue: 'bar')}),
+        "empty": //test.assert.equal({},annoRel('app', {})),
+        "single": 
+            let expected = {(appName: 'App', appAnnoName: 'foo', appAnnoValue: 'bar')};
+            let result = annoRel('app', {(appName: 'App', app: _app)});
+            //test.assert.equal(expected, result),
+            
     ),
     tagRel: (
-        empty: tagRel('app', {}) = (app: {}),
-        single: tagRel('app', {(appName: 'App', app: _app)}) =
-            (app: {(appName: 'App', appTag: 'db')}),
+        "empty": tagRel('app', {}) = {},
+        "single": tagRel('app', {(appName: 'App', app: _app)}) =
+             {(appName: 'App', appTag: 'db')},
     ),
 
     polish: (
-        idempotent: polish(_model) = polish(polish(_model)),
+        idempotent: 
+            let expected = polish(_model);
+            let result = polish(polish(_model));
+            //test.assert.equal(expected, result),
     ),
     normalize: (
-        model: normalize(_model) != (),
+        model: 
+            let result = normalize(_model);
+            //test.assert.unequal((), result),
     ),
     newNormalize: (
-        model: newNormalize(_model) != (),
-        all:
-            let _all = load('out/all.pb');
-            newNormalize(_all) = //{./test_all_sysl_normalized}
+        model: 
+            let result = newNormalize(_model);
+            //test.assert.unequal((), result),
+        # all:
+        #     let _all = load('out/all.pb');
+        #     let expected = //{./test_all_sysl_normalized};
+        #     let result = newNormalize(_all);
+        #     //test.assert.equal(expected, result),
     ),
 )
